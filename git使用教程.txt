@@ -1,0 +1,9 @@
+在windows下
+1.打开git bash
+2.建立一个空文件夹 mkdir learngit
+3.初始化一个git仓库 git init
+4.添加文件到git仓库 
+  git add file
+  git commit  - m 'add 1 file'
+git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
+	
