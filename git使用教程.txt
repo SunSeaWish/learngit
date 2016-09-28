@@ -6,4 +6,18 @@
   git add file
   git commit  - m 'add 1 file'
 git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
-	
+
+5. git status命令 ：时刻掌握仓库当前的状态
+
+6. git log 查看历史记录
+7. git log --pretty=oneline 查看历史记录 一行
+8. git reset --hard Hard^^ 版本回退 Hard^^ 回退到上上个版本
+   git reset --hard commit_id 版本回掉到 某个版本号
+9. git reflog 记录每一次命令
+10. git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
+11. git checkout -- file 放弃工作区的修改
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+
+场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
